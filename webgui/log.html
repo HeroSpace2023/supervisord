@@ -28,7 +28,7 @@
             return
         }
 
-        axios.get("/log/" + name).then(function (response) {
+        axios.get("./log/" + name).then(function (response) {
             console.log(response.data)
             $("#app").html(response.data)
 
